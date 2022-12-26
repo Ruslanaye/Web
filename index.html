@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>П</span>утешествия</a>
+        <nav class="navbar">
+            <a href="#home">Главная</a>
+            <a href="#book">Подобрать</a>
+            <a href="#packages">Туры</a>
+            <a href="#services">Сервисы</a>
+            <a href="#gallery">Галлерея</a>
+            <a href="#review">Отзывы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Поиск">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Напишите почту">
+            <input type="password" class="box" placeholder="Напишите пароль">
+            <input type="submit" value="Авторизоваться" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">запомнить меня</label>
+            <p>Забыли пароль? <a href="#">Восстановить</a></p>
+            <p>У вас нет аккаунта? <a href="#">Зарегестрироваться</a></p>
+        </form>
+
+    </div>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>приключение того стоит</h3>
+            <p> открывайте новые места вместе с нами, вас ждут приключения</p>
+            <a href="#" class="btn">узнайте больше</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>П</span>
+            <span>У</span>
+            <span>Т</span>
+            <span>Е</span>
+            <span>Ш</span>
+            <span>Е</span>
+            <span>С</span>
+            <span>Т</span>
+            <span>В</span>
+            <span>И</span>
+            <span>Я</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/book-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>Куда</h3>
+                    <input type="text" placeholder="Название">
+                </div>
+                <div class="inputBox">
+                    <h3>Сколько человек</h3>
+                    <input type="number" placeholder="оличество гостей">
+                </div>
+                <div class="inputBox">
+                    <h3>Прибытие</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Уезд</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="Заказать">
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>П</span>
+            <span>У</span>
+            <span>Т</span>
+            <span>Е</span>
+            <span>В</span>
+            <span>К</span>
+            <span>А</span>
+            <span>!</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Мумбаи </h3>
+                    <p>Мумбаи является Центром Столичного Региона Мумбаи, шестого По численности населения Мегаполиса в
+                        мире с населением более 23 миллионов человек.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 100.000 <span>80.000</span> </div>
+                    <a href="#" class="btn">Забронировать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Гавайи </h3>
+                    <p>
+                        Гавайи - Штат На Западе Соединенных Штатов, Расположенный В Тихом Океане Примерно В 2000 Милях
+                        От Материковой Части Сша. Это Единственный Штат За Пределами Северной Америки, Единственный
+                        Штат, Представляющий Собой Архипелаг, И Единственный Штат В Тропиках.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">70.000 <span>90.000</span> </div>
+                    <a href="#" class="btn">Забронировать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Сидней </h3>
+                    <p>Сидней, Столица Нового Южного Уэльса И Один Из Крупнейших Городов Австралии, Наиболее Известен
+                        Своим Сиднейским Оперным Театром На Набережной С Характерным Дизайном В Виде Паруса.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 90.000 <span>120.000</span> </div>
+                    <a href="#" class="btn">Забронировать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Париж </h3>
+                    <p>Париж, столица Франции, является крупным европейским городом и мировым центром искусства, моды,
+                        гастрономии и культуры. Его городской пейзаж 19 века пересекают широкие бульвары и
+                        река Сена. Помимо таких достопримечательностей, как Эйфелева башня и готический собор Парижской
+                        Богоматери 12 века,
+                        город известен своей культурой кафе и дизайнерскими бутиками вдоль улицы Дю
+                        Предместье Сент-Оноре.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 90.000 <span>120.000</span> </div>
+                    <a href="#" class="btn">Забронировать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Токио </h3>
+                    <p>Токио, оживленная столица Японии, сочетает в себе ультрасовременное и традиционное, начиная с
+                        небоскребов с неоновой подсветкой
+                        к историческим храмам.Роскошное синтоистское святилище Мэйдзи известно своими высокими воротами
+                        и
+                        окружающими лесами. Императорский дворец расположен среди больших общественных садов.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 90.000 <span>120.000</span> </div>
+                    <a href="#" class="btn">Забронировать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Египет </h3>
+                    <p>Египет, страна, соединяющая северо-восточную Африку с Ближним Востоком, восходит ко временам
+                        фараонов. Тысячелетние памятники расположены вдоль плодородной долины реки Нил, включая
+                        колоссальные пирамиды Гизы и Великого Сфинкса, а также украшенный иероглифами храм Карнак в
+                        Луксоре и гробницы Долины
+                        царей.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 90.000 <span>120.000</span> </div>
+                    <a href="#" class="btn">Забронировать</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>с</span>
+            <span>е</span>
+            <span>р</span>
+            <span>в</span>
+            <span>и</span>
+            <span>с</span>
+            <span>ы</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>доступные отели</h3>
+                <p> У нас есть множество недорогих отелей для вас по всему миру!! Так чего же ты ждешь, просто
+                    Наслаждайтесь своей жизнью, НЕ ТРАТЯ МНОГО.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>еда и напитки</h3>
+                <p> Вы получите все виды еды и напитков, таких как мексиканская, индийская, китайская, итальянская ...
+                    по очень
+                    разумным ценам.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>безопасное руководство</h3>
+                <p>Путешествовать с нами еще никогда не было так безопасно. Мы всегда заботимся о безопасности наших
+                    клиентов и соблюдаем
+                    меры предосторожности во время путешествий.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>вокруг света</h3>
+                <p>Когда дело доходит до пунктов назначения, единственным ограничением является ваше воображение,
+                    поскольку мы расширили наши услуги, чтобы
+                    клиенты могли летать в любую точку мира, которую они захотят.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>самое быстрое путешествие</h3>
+                <p>Долгие, утомительные перелеты вам не по душе? Не беспокойтесь! Некоторые из самых быстрых рейсов,
+                    которые у нас есть, могут доставить вас в
+                    роскошное, безмятежное место всего за один час!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>приключения</h3>
+                <p>Жизнь слишком коротка, чтобы не воспользоваться возможностью испытать приключение, когда оно
+                    подвернется, и мы можем
+                    гарантировать, что вы никогда не пожалеете о своем решении.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+            <span>Г</span>
+            <span>а</span>
+            <span>л</span>
+            <span>е</span>
+            <span>р</span>
+            <span>е</span>
+            <span>я</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p> Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-2.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-3.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-4.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-5.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-7.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-9.jpg" alt="">
+                <div class="content">
+                    <h3>удивительные места</h3>
+                    <p>Баган, Мьянма; Цветные скалы Чжанъе Данксиа в провинции Ганьсу, Китай;Река Ли, Китай.</p>
+                    <a href="#" class="btn">Смотреть далее</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>О</span>
+            <span>Т</span>
+            <span>З</span>
+            <span>Ы</span>
+            <span>В</span>
+            <span>Ы</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.png" alt="">
+                        <h3>Иван</h3>
+                        <p>Было классно</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.png" alt="">
+                        <h3>Александр</h3>
+                        <p>Круто, спасибо большое</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.png" alt="">
+                        <h3>Влад</h3>
+                        <p>Мне очень понравилось!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic4.png" alt="">
+                        <h3>Ксения</h3>
+                        <p>Буду советовать друзьям!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>К</span>
+            <span>О</span>
+            <span>Н</span>
+            <span>Т</span>
+            <span>А</span>
+            <span>К</span>
+            <span>Т</span>
+            <span>Ы</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Имя">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Кол-во суток">
+                    <input type="text" placeholder="Место">
+                </div>
+                <textarea placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Отправить сообщение">
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="brand-container">
+
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>О нас</h3>
+                <p>Мы компания, которая предаствляет путевки с современным форматомю. Подойдет, как для более старого
+                    поколения, так и для молодого.</p>
+            </div>
+            <div class="box">
+                <h3>расположение филиалов</h3>
+                <a href="#">Москва</a>
+                <a href="#">Санкт-Петербург</a>
+                <a href="#">Сыктывкар</a>
+                <a href="#">Петрозаводск</a>
+            </div>
+            <div class="box">
+                <h3>Ссылки</h3>
+                <a href="#">Главная</a>
+                <a href="#book">Подобрать</a>
+                <a href="#packages">Туры</a>
+                <a href="#services">Сервис</a>
+                <a href="#gallery">Галлерея</a>
+                <a href="#review">Отзывы</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <div class="box">
+                <h3>Подписывайтесь</h3>
+                <a href="https://vk.com/feed">Vk</a>
+                <a href="https://instagram.com/">instagram</a>
+                <a href="https://twitter.com/">twitter</a>
+                <a href="https://mail.ru/">Mail.ru</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> Создана для курсовой работы по WEB-технологиям </h1>
+
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
